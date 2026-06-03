@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Proxy /api/submit-lead to the Netlify function when using `netlify dev`
+# without the Next.js plugin, or as a fallback for static deployments.
+[[redirects]]
+  from = "/api/submit-lead"
+  to = "/.netlify/functions/submit-lead"
+  status = 200
+  force = false
+
+[functions]
+  directory = "netlify/functions"
