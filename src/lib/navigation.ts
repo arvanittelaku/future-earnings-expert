@@ -13,8 +13,8 @@ export type NavDropdown = {
 };
 
 export type NavEntry =
-  | { type: "link"; href: string; label: string }
-  | { type: "dropdown"; dropdown: NavDropdown };
+  | { type: "link"; href: string; label: string; shortLabel?: string }
+  | { type: "dropdown"; dropdown: NavDropdown & { shortLabel?: string } };
 
 export const mainNav: NavEntry[] = [
   {
@@ -28,11 +28,12 @@ export const mainNav: NavEntry[] = [
       ],
     },
   },
-  { type: "link", href: "/how-future-earnings-are-calculated", label: "How Earnings Are Calculated" },
+  { type: "link", href: "/how-future-earnings-are-calculated", label: "How Earnings Are Calculated", shortLabel: "Earnings Calculation" },
   {
     type: "dropdown",
     dropdown: {
       label: "Damages Contexts",
+      shortLabel: "Damages",
       href: "/damages-contexts",
       items: [
         { href: "/damages-contexts", label: "All Damages Contexts" },
@@ -47,6 +48,7 @@ export const mainNav: NavEntry[] = [
     type: "dropdown",
     dropdown: {
       label: "Earnings Damages Types",
+      shortLabel: "Damages Types",
       href: "/earnings-damages-types",
       items: [
         { href: "/earnings-damages-types", label: "All Earnings Damages Types" },
