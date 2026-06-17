@@ -6,9 +6,9 @@ import { guides } from "@/lib/content/guides";
 import { SITE_URL, siteConfig } from "@/lib/site-config";
 
 export const metadata = {
-  title: "Future Earnings Expert Witness | Quantifying Economic Damages",
+  title: "Future Earnings Expert Witness | Quantifying Economic Damages (UK)",
   description:
-    "Find a qualified future earnings expert witness. Forensic economists quantifying loss of future earnings, earning capacity, and economic damages for litigation attorneys nationwide. FRE 702 compliant.",
+    "Find a qualified future earnings expert witness in the UK. Forensic economists quantifying loss of future earnings, earning capacity, and economic damages for solicitors and counsel across England, Wales, Scotland, and Northern Ireland.",
 };
 
 const stats = [
@@ -41,7 +41,10 @@ export default function HomePage() {
         name: siteConfig.name,
         url: SITE_URL,
         email: siteConfig.email,
-        areaServed: "United States",
+        areaServed: {
+          "@type": "Country",
+          name: "United Kingdom",
+        },
         description: siteConfig.description,
       },
       {
@@ -49,7 +52,10 @@ export default function HomePage() {
         "@id": `${SITE_URL}/#service`,
         name: "Future Earnings Expert Witness Services",
         provider: { "@id": `${SITE_URL}/#organization` },
-        areaServed: "United States",
+        areaServed: {
+          "@type": "Country",
+          name: "United Kingdom",
+        },
         serviceType: "Forensic Economics Expert Witness",
       },
     ],
@@ -62,15 +68,20 @@ export default function HomePage() {
       <section className="bg-navy px-4 py-14 md:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-gold">
-            Forensic Economics · Expert Witness · Litigation Only
+            Forensic Economics · Expert Witness · UK Litigation Only
           </p>
           <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-            Future Earnings Expert Witness Services for Litigation Attorneys
+            Future Earnings Expert Witness Services for UK Litigation
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
-            Injury and employment cases turn on defensible quantification of future earnings, earning
-            capacity, and economic damages. FutureEarningsExpert.com connects plaintiff and defense counsel
-            with qualified forensic economists who produce court-ready, Daubert-aware expert reports.
+            Personal injury, employment, and clinical negligence matters turn on defensible quantification
+            of future earnings, earning capacity, and economic damages. FutureEarningsExpert.com connects
+            UK solicitors and counsel with qualified forensic economists who produce court-ready expert
+            reports for matters in England, Wales, Scotland, and Northern Ireland.
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl rounded border border-white/20 bg-white/5 px-4 py-3 text-sm text-white/90">
+            <strong className="text-gold">United Kingdom only.</strong> This service is not available to
+            visitors or legal professionals outside the UK.
           </p>
         <Link
           href="/contact"

@@ -44,8 +44,19 @@ export default function TermsPage() {
           </p>
         </section>
         <section>
+          <h2 className="text-xl font-semibold text-navy">Service Area — United Kingdom Only</h2>
+          <p className="mt-2">
+            {siteConfig.name} provides referral and educational services exclusively for legal professionals
+            with matters in England, Wales, Scotland, and Northern Ireland. We do not accept enquiries from
+            outside the {siteConfig.regionLabel}.
+          </p>
+        </section>
+        <section>
           <h2 className="text-xl font-semibold text-navy">Governing Law</h2>
-          <p className="mt-2">These terms are governed by the laws of the State of Illinois, United States.</p>
+          <p className="mt-2">
+            These terms are governed by the laws of England and Wales. Disputes shall be subject to the
+            exclusive jurisdiction of the courts of England and Wales.
+          </p>
         </section>
         <Link href="/privacy" className="font-semibold text-navy hover:text-gold">
           Privacy Policy →

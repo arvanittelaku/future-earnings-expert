@@ -12,8 +12,12 @@ export function Footer() {
           <p className="text-lg font-bold">Future Earnings Expert</p>
           <p className="mt-2 text-sm text-white/70">{siteConfig.tagline}</p>
           <p className="mt-4 text-xs text-white/60">
-            Forensic economics and expert witness services for litigation attorneys—not consumer finance,
-            cryptocurrency, or investment coaching.
+            Forensic economics and expert witness services for UK litigation solicitors and counsel—not
+            consumer finance, cryptocurrency, or investment coaching.
+          </p>
+          <p className="mt-3 rounded border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/70">
+            <strong className="text-gold">{siteConfig.regionLabel} only.</strong>{" "}
+            {siteConfig.regionNotice}
           </p>
         </div>
         <div>
@@ -59,8 +63,8 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10 px-4 py-6 text-center text-xs text-white/50">
         <p>
-          FutureEarningsExpert.com connects litigation attorneys with forensic economists. We are not a law
-          firm and do not provide legal advice.
+          FutureEarningsExpert.com connects UK litigation solicitors with forensic economists. We are not a law
+          firm and do not provide legal advice. Services are limited to the {siteConfig.regionLabel}.
         </p>
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
           <span>© {new Date().getFullYear()} {siteConfig.name}.</span>

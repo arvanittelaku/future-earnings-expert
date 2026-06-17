@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Submit your case details to be matched with a qualified forensic economist for future earnings and economic damages expert witness services.",
+    "Submit your UK case details to be matched with a qualified forensic economist for future earnings and economic damages expert witness services in England, Wales, Scotland, and Northern Ireland.",
 };
 
 export default function ContactPage() {
@@ -13,15 +13,19 @@ export default function ContactPage() {
     <>
       <PageHero
         title="Contact Us"
-        subtitle="Connect with a forensic economist for civil, employment, or malpractice economic damages."
+        subtitle="Connect with a forensic economist for UK civil, employment, or clinical negligence economic damages."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:gap-12 sm:py-12 lg:grid-cols-2 lg:px-8">
         <div className="min-w-0">
           <h2 className="text-xl font-semibold text-navy">Three Intake Paths</h2>
+          <div className="mt-6 rounded border border-gold/30 bg-section px-4 py-3 text-sm text-body">
+            <strong className="text-navy">{siteConfig.regionLabel} only.</strong>{" "}
+            {siteConfig.regionNotice}
+          </div>
           <div className="mt-6 space-y-4 text-body">
-            <p><strong>Plaintiff counsel:</strong> Quantifying future earnings or earning capacity for injury, death, or employment claims.</p>
-            <p><strong>Defense counsel:</strong> Independent damages analysis or rebuttal of opposing economist reports.</p>
+            <p><strong>Claimant solicitors:</strong> Quantifying future earnings or earning capacity for injury, death, or employment claims.</p>
+            <p><strong>Defendant solicitors:</strong> Independent damages analysis or rebuttal of opposing economist reports.</p>
             <p><strong>In-house / insurers:</strong> Economic damages assessment for high-exposure litigation support.</p>
           </div>
           <dl className="mt-8 space-y-4">
@@ -38,8 +42,8 @@ export default function ContactPage() {
             </div>
           </dl>
           <ul className="mt-8 space-y-2 text-sm text-body">
-            <li>✓ Personal injury, employment &amp; malpractice contexts</li>
-            <li>✓ FRE 702 &amp; Daubert-aware methodology</li>
+            <li>✓ Personal injury, employment &amp; clinical negligence contexts</li>
+            <li>✓ CPR Part 35 &amp; court-ready expert methodology</li>
             <li>✓ Response within {siteConfig.responseTime}</li>
           </ul>
         </div>

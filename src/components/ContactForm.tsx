@@ -5,8 +5,8 @@ import { FormEvent, useState } from "react";
 import { siteConfig } from "@/lib/site-config";
 
 const PHONE_COUNTRY_CODES = [
-  { label: "US +1", value: "+1" },
   { label: "UK +44", value: "+44" },
+  { label: "US +1", value: "+1" },
   { label: "CA +1", value: "+1" },
   { label: "AU +61", value: "+61" },
   { label: "Other", value: "" },
@@ -108,8 +108,8 @@ export function ContactForm() {
         name="role"
         required
         options={[
-          "Plaintiff attorney",
-          "Defense attorney",
+          "Claimant solicitor",
+          "Defendant solicitor",
           "In-house counsel",
           "Insurance / claims professional",
           "Other legal professional",
@@ -122,8 +122,8 @@ export function ContactForm() {
         required
         options={[
           "Personal injury / wrongful death",
-          "Employment / wrongful termination",
-          "Medical malpractice",
+          "Employment / unfair dismissal",
+          "Clinical negligence",
           "Commercial / business damages",
           "Multiple / not sure",
         ]}

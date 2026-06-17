@@ -13,9 +13,9 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-3xl space-y-6 px-4 py-12 text-body lg:px-8">
         <p>Last updated: June 2026</p>
         <p>
-          {siteConfig.name} ({siteConfig.domain}) connects litigation attorneys with independent forensic
+          {siteConfig.name} ({siteConfig.domain}) connects UK litigation solicitors with independent forensic
           economists. This policy describes how we collect and use information when you visit our website
-          or submit a consultation request.
+          or submit a consultation request. Our services are limited to the {siteConfig.regionLabel}.
         </p>
         <section>
           <h2 className="text-xl font-semibold text-navy">Information We Collect</h2>

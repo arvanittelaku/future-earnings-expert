@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     template: "%s | Future Earnings Expert",
   },
   description: siteConfig.description,
-  openGraph: { type: "website", locale: "en_US", siteName: siteConfig.name },
+  openGraph: { type: "website", locale: "en_GB", siteName: siteConfig.name },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-US">
+    <html lang="en-GB">
       <body className={`${inter.className} flex min-h-screen flex-col`}>
         <ConsentModeDefaultsScript />
         <CookieConsentProvider>

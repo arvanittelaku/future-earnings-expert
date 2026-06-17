@@ -4,12 +4,15 @@ export const siteConfig = {
   name: "Future Earnings Expert",
   shortName: "FutureEarningsExpert",
   domain: SITE_URL,
-  email: "info@futureearningsexpert.com",
-  tagline: "Defensible economic damages for litigation.",
+  email: "contact@futureearningsexpert.com",
+  tagline: "Defensible economic damages for UK litigation.",
   description:
-    "Future Earnings Expert connects litigation attorneys with qualified forensic economists specializing in future earnings, earning capacity, and economic damages expert witness services nationwide.",
+    "Future Earnings Expert connects UK litigation solicitors and counsel with qualified forensic economists specialising in future earnings, earning capacity, and economic damages expert witness services across England, Wales, Scotland, and Northern Ireland.",
   responseTime: "1 business day",
-  country: "US",
+  country: "GB",
+  regionLabel: "United Kingdom",
+  regionNotice:
+    "This website and our expert witness referral service are for legal professionals with matters in England, Wales, Scotland, and Northern Ireland only. We do not accept enquiries from outside the UK.",
 };
 
 export type ContentSection = {
