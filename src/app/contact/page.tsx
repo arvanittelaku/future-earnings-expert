@@ -19,10 +19,6 @@ export default function ContactPage() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:gap-12 sm:py-12 lg:grid-cols-2 lg:px-8">
         <div className="min-w-0">
           <h2 className="text-xl font-semibold text-navy">Three Intake Paths</h2>
-          <div className="mt-6 rounded border border-gold/30 bg-section px-4 py-3 text-sm text-body">
-            <strong className="text-navy">{siteConfig.regionLabel} only.</strong>{" "}
-            {siteConfig.regionNotice}
-          </div>
           <div className="mt-6 space-y-4 text-body">
             <p><strong>Claimant solicitors:</strong> Quantifying future earnings or earning capacity for injury, death, or employment claims.</p>
             <p><strong>Defendant solicitors:</strong> Independent damages analysis or rebuttal of opposing economist reports.</p>

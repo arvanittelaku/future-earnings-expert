@@ -68,7 +68,7 @@ export default function HomePage() {
       <section className="bg-navy px-4 py-14 md:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-gold">
-            Forensic Economics · Expert Witness · UK Litigation Only
+            Forensic Economics · Expert Witness
           </p>
           <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Future Earnings Expert Witness Services for UK Litigation
@@ -78,10 +78,6 @@ export default function HomePage() {
             of future earnings, earning capacity, and economic damages. FutureEarningsExpert.com connects
             UK solicitors and counsel with qualified forensic economists who produce court-ready expert
             reports for matters in England, Wales, Scotland, and Northern Ireland.
-          </p>
-          <p className="mx-auto mt-4 max-w-2xl rounded border border-white/20 bg-white/5 px-4 py-3 text-sm text-white/90">
-            <strong className="text-gold">United Kingdom only.</strong> This service is not available to
-            visitors or legal professionals outside the UK.
           </p>
         <Link
           href="/contact"

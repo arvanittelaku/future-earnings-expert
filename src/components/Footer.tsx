@@ -15,10 +15,6 @@ export function Footer() {
             Forensic economics and expert witness services for UK litigation solicitors and counsel—not
             consumer finance, cryptocurrency, or investment coaching.
           </p>
-          <p className="mt-3 rounded border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/70">
-            <strong className="text-gold">{siteConfig.regionLabel} only.</strong>{" "}
-            {siteConfig.regionNotice}
-          </p>
         </div>
         <div>
           <p className="mb-3 text-sm font-semibold uppercase text-gold">Services</p>
